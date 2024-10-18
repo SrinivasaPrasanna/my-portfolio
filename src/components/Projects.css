@@ -1,0 +1,29 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+      gap: 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .projects-container {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
+    }
+  }
+  
